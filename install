@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+cp vimrc.local ~/.vimrc.local
+cp zshrc ~/.zshrc
+cp gitconfig ~/.gitconfig

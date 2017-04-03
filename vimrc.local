@@ -1,0 +1,21 @@
+set ignorecase
+set noswapfile
+nnoremap <Leader>d :bufdo bd!<CR>
+set nofoldenable
+
+if getcwd() == '/Users/josh/workspace/policygenius'
+  colorscheme atom
+elseif getcwd() == '/Users/josh/workspace/umbrella'
+  colorscheme herokudoc
+elseif getcwd() == '/Users/josh/workspace/health'
+  colorscheme herokudoc
+elseif getcwd() == '/Users/josh/workspace/policygenius-ui'
+  colorscheme habilight
+elseif getcwd() == '/Users/josh/workspace/briefcase'
+  colorscheme tomorrow-night-eighties
+endif
+
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
